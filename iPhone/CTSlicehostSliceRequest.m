@@ -27,7 +27,7 @@
 }
 
 - (NSArray *)slices {
-    return nil;
+    return [[NSArray alloc] init];
 }
 
 #pragma mark -
