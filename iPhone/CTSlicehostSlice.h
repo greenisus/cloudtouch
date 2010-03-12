@@ -19,7 +19,7 @@
 	NSUInteger progress;
 	NSDecimal bandwidthIn;
 	NSDecimal bandwidthOut;
-	NSArray *addresses;
+	NSMutableArray *addresses;
 	NSString *rootPassword;
 }
 
@@ -32,9 +32,10 @@
 @property (assign) NSUInteger progress;
 @property (assign) NSDecimal bandwidthIn;
 @property (assign) NSDecimal bandwidthOut;
-@property (retain) NSArray *addresses;
+@property (retain) NSMutableArray *addresses;
 @property (retain) NSString *rootPassword;
 
++ (id)slice;
 - (NSString *)toXML;
 
 @end

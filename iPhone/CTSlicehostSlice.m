@@ -13,6 +13,12 @@
 
 @synthesize sliceId, name, flavorId, imageId, backupId, status, progress, bandwidthIn, bandwidthOut, addresses, rootPassword;
 
++ (id)slice {
+	CTSlicehostSlice *slice = [[[self alloc] init] autorelease];
+	slice.addresses = [[NSMutableArray alloc] init];
+	return slice;
+}
+
 - (NSString *)toXML {
 	NSString *addr = @"";
 	

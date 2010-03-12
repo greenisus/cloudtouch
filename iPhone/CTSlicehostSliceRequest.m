@@ -16,6 +16,7 @@
 + (id)sliceRequestWithMethod:(NSString *)method path:(NSString *)path {
 	NSString *urlString = [NSString stringWithFormat:@"%@%@", [CTSlicehostRequest host], path];	
 	CTSlicehostSliceRequest *request = [[[CTSlicehostSliceRequest alloc] initWithURL:[NSURL URLWithString:urlString]] autorelease];
+	[request addBasicAuthenticationHeaderWithUsername:[CTSlicehostRequest apiKey] andPassword:@""];
 	[request setRequestMethod:method];
 	return request;
 }
@@ -27,7 +28,22 @@
 }
 
 - (NSArray *)slices {
-    return [[NSArray alloc] init];
+	if (xmlParserDelegate.sliceObjects) {
+		return xmlParserDelegate.sliceObjects;
+	}
+	
+	NSXMLParser *parser = [[[NSXMLParser alloc] initWithData:[self responseData]] autorelease];
+	if (xmlParserDelegate == nil) {
+		xmlParserDelegate = [[CTSlicehostSliceXMLParserDelegate alloc] init];
+	}
+	
+	[parser setDelegate:xmlParserDelegate];
+	[parser setShouldProcessNamespaces:NO];
+	[parser setShouldReportNamespacePrefixes:NO];
+	[parser setShouldResolveExternalEntities:NO];
+	[parser parse];
+	
+	return xmlParserDelegate.sliceObjects;
 }
 
 #pragma mark -
@@ -37,7 +53,11 @@
 }
 
 - (CTSlicehostSlice *)slice {
-    return nil;
+    if ([[self slices] count] > 0) {
+        return [[self slices] objectAtIndex:0];
+    } else {
+        return nil;
+    }
 }
 
 #pragma mark -

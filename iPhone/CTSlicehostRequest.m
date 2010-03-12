@@ -20,6 +20,7 @@ static NSRecursiveLock *accessDetailsLock = nil;
 
 + (NSString *)host {
     return [NSString stringWithFormat:@"https://%@@api.slicehost.com/", apiKey];
+	//return @"https://api.slicehost.com/";
 }
 
 + (NSString *)apiKey {

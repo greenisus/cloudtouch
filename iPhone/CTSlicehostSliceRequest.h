@@ -8,9 +8,10 @@
 #import <Foundation/Foundation.h>
 #import "CTSlicehostRequest.h"
 #import "CTSlicehostSlice.h"
-
+#import "CTSlicehostSliceXMLParserDelegate.h"
 
 @interface CTSlicehostSliceRequest : CTSlicehostRequest {
+	CTSlicehostSliceXMLParserDelegate *xmlParserDelegate;
 }
 
 // GET https://apikey@api.slicehost.com/slices.xml

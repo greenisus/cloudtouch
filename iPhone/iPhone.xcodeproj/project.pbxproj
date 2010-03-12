@@ -11,7 +11,6 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		27089AF31149C28000A1BFE8 /* HelloTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768C1E51149C0C300758718 /* HelloTest.m */; };
 		27089B071149C2B700A1BFE8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27089B061149C2B700A1BFE8 /* SenTestingKit.framework */; };
 		27089B2A1149C35000A1BFE8 /* libGHUnitIPhone3_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C1A31149BFF300758718 /* libGHUnitIPhone3_0.a */; };
 		27089BD51149C35400A1BFE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -71,9 +70,11 @@
 		27089E02114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27089E01114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.m */; };
 		27089E07114AF07E00A1BFE8 /* CTSlicehostSliceRequestTest.h in Sources */ = {isa = PBXBuildFile; fileRef = 27089E00114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.h */; };
 		27089E08114AF07E00A1BFE8 /* CTSlicehostSliceRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27089E01114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.m */; };
+		27089E39114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */; };
+		27089E41114AF47F00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 27089E37114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.h */; };
+		27089E42114AF47F00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */; };
 		2768C1A41149BFF300758718 /* libGHUnitIPhone3_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C1A31149BFF300758718 /* libGHUnitIPhone3_0.a */; };
 		2768C1BB1149C03600758718 /* GHUnitIPhoneTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768C1B61149C03600758718 /* GHUnitIPhoneTestMain.m */; };
-		2768C1E61149C0C300758718 /* HelloTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768C1E51149C0C300758718 /* HelloTest.m */; };
 		28216C970DB411BC00E5133A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FirstViewController.m */; };
 		282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* SecondView.xib */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
@@ -125,6 +126,8 @@
 		27089D6A114AD6AC00A1BFE8 /* CTSlicehostSliceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostSliceRequest.m; sourceTree = "<group>"; };
 		27089E00114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostSliceRequestTest.h; sourceTree = "<group>"; };
 		27089E01114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostSliceRequestTest.m; sourceTree = "<group>"; };
+		27089E37114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostSliceXMLParserDelegate.h; sourceTree = "<group>"; };
+		27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostSliceXMLParserDelegate.m; sourceTree = "<group>"; };
 		2768C15E1149BEE800758718 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2768C1601149BEE800758718 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		2768C1A31149BFF300758718 /* libGHUnitIPhone3_0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGHUnitIPhone3_0.a; path = "Library/Frameworks/libGHUnitIPhone3_0-0/libGHUnitIPhone3_0.a"; sourceTree = DEVELOPER_DIR; };
@@ -142,8 +145,6 @@
 		2768C1B71149C03600758718 /* GHUNSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHUNSObject+Swizzle.h"; sourceTree = "<group>"; };
 		2768C1B91149C03600758718 /* NSException+GHTestFailureExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+GHTestFailureExceptions.h"; sourceTree = "<group>"; };
 		2768C1BA1149C03600758718 /* NSValue+GHValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+GHValueFormatter.h"; sourceTree = "<group>"; };
-		2768C1E41149C0C300758718 /* HelloTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloTest.h; sourceTree = "<group>"; };
-		2768C1E51149C0C300758718 /* HelloTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloTest.m; sourceTree = "<group>"; };
 		28216C950DB411BC00E5133A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		28216C960DB411BC00E5133A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		282CCBFD0DB6C98000C4EA27 /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
@@ -293,6 +294,8 @@
 		27089C5E1149D1DC00A1BFE8 /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
+				27089E37114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.h */,
+				27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -366,8 +369,6 @@
 			isa = PBXGroup;
 			children = (
 				27089DFF114AEFE900A1BFE8 /* Slicehost */,
-				2768C1E41149C0C300758718 /* HelloTest.h */,
-				2768C1E51149C0C300758718 /* HelloTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -505,7 +506,6 @@
 				1D3623260D0F684500981E51 /* iPhoneAppDelegate.m in Sources */,
 				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
 				2768C1BB1149C03600758718 /* GHUnitIPhoneTestMain.m in Sources */,
-				2768C1E61149C0C300758718 /* HelloTest.m in Sources */,
 				27089C2C1149CDB900A1BFE8 /* ASIAuthenticationDialog.m in Sources */,
 				27089C2D1149CDB900A1BFE8 /* ASIFormDataRequest.m in Sources */,
 				27089C2E1149CDB900A1BFE8 /* ASIHTTPRequest.m in Sources */,
@@ -523,6 +523,7 @@
 				27089D66114AD69600A1BFE8 /* CTSlicehostRequest.m in Sources */,
 				27089D6B114AD6AC00A1BFE8 /* CTSlicehostSliceRequest.m in Sources */,
 				27089E02114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.m in Sources */,
+				27089E39114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27089E41114AF47F00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.h in Sources */,
+				27089E42114AF47F00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */,
 				27089E07114AF07E00A1BFE8 /* CTSlicehostSliceRequestTest.h in Sources */,
 				27089E08114AF07E00A1BFE8 /* CTSlicehostSliceRequestTest.m in Sources */,
 				27089DE7114AEF6700A1BFE8 /* Reachability.h in Sources */,
@@ -564,7 +567,6 @@
 				27089DB7114AEED500A1BFE8 /* CTSlicehostBackup.h in Sources */,
 				27089DB8114AEED500A1BFE8 /* CTSlicehostBackup.m in Sources */,
 				27089BE61149C38B00A1BFE8 /* GHUnitIPhoneTestMain.m in Sources */,
-				27089AF31149C28000A1BFE8 /* HelloTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
