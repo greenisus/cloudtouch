@@ -75,6 +75,9 @@
 		27089E42114AF47F00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */; };
 		2768C1A41149BFF300758718 /* libGHUnitIPhone3_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C1A31149BFF300758718 /* libGHUnitIPhone3_0.a */; };
 		2768C1BB1149C03600758718 /* GHUnitIPhoneTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768C1B61149C03600758718 /* GHUnitIPhoneTestMain.m */; };
+		27FC98441172AC0D00250D42 /* CTSlicehostFlavorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC98431172AC0D00250D42 /* CTSlicehostFlavorRequest.m */; };
+		27FC98471172AC1600250D42 /* CTSlicehostImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC98461172AC1600250D42 /* CTSlicehostImageRequest.m */; };
+		27FC984A1172AC2100250D42 /* CTSlicehostBackupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC98491172AC2100250D42 /* CTSlicehostBackupRequest.m */; };
 		28216C970DB411BC00E5133A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FirstViewController.m */; };
 		282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* SecondView.xib */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
@@ -145,6 +148,12 @@
 		2768C1B71149C03600758718 /* GHUNSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHUNSObject+Swizzle.h"; sourceTree = "<group>"; };
 		2768C1B91149C03600758718 /* NSException+GHTestFailureExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+GHTestFailureExceptions.h"; sourceTree = "<group>"; };
 		2768C1BA1149C03600758718 /* NSValue+GHValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+GHValueFormatter.h"; sourceTree = "<group>"; };
+		27FC98421172AC0D00250D42 /* CTSlicehostFlavorRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostFlavorRequest.h; sourceTree = "<group>"; };
+		27FC98431172AC0D00250D42 /* CTSlicehostFlavorRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostFlavorRequest.m; sourceTree = "<group>"; };
+		27FC98451172AC1600250D42 /* CTSlicehostImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostImageRequest.h; sourceTree = "<group>"; };
+		27FC98461172AC1600250D42 /* CTSlicehostImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostImageRequest.m; sourceTree = "<group>"; };
+		27FC98481172AC2100250D42 /* CTSlicehostBackupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostBackupRequest.h; sourceTree = "<group>"; };
+		27FC98491172AC2100250D42 /* CTSlicehostBackupRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostBackupRequest.m; sourceTree = "<group>"; };
 		28216C950DB411BC00E5133A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		28216C960DB411BC00E5133A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		282CCBFD0DB6C98000C4EA27 /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
@@ -287,6 +296,12 @@
 				27089D65114AD69600A1BFE8 /* CTSlicehostRequest.m */,
 				27089D69114AD6AC00A1BFE8 /* CTSlicehostSliceRequest.h */,
 				27089D6A114AD6AC00A1BFE8 /* CTSlicehostSliceRequest.m */,
+				27FC98421172AC0D00250D42 /* CTSlicehostFlavorRequest.h */,
+				27FC98431172AC0D00250D42 /* CTSlicehostFlavorRequest.m */,
+				27FC98451172AC1600250D42 /* CTSlicehostImageRequest.h */,
+				27FC98461172AC1600250D42 /* CTSlicehostImageRequest.m */,
+				27FC98481172AC2100250D42 /* CTSlicehostBackupRequest.h */,
+				27FC98491172AC2100250D42 /* CTSlicehostBackupRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -524,6 +539,9 @@
 				27089D6B114AD6AC00A1BFE8 /* CTSlicehostSliceRequest.m in Sources */,
 				27089E02114AF00200A1BFE8 /* CTSlicehostSliceRequestTest.m in Sources */,
 				27089E39114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */,
+				27FC98441172AC0D00250D42 /* CTSlicehostFlavorRequest.m in Sources */,
+				27FC98471172AC1600250D42 /* CTSlicehostImageRequest.m in Sources */,
+				27FC984A1172AC2100250D42 /* CTSlicehostBackupRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
