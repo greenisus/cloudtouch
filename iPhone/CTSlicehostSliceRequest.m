@@ -6,6 +6,7 @@
 //
 
 #import "CTSlicehostSliceRequest.h"
+#import "ASIFormDataRequest.h"
 
 
 @implementation CTSlicehostSliceRequest
@@ -63,16 +64,21 @@
 #pragma mark -
 #pragma mark POST https://apikey@api.slicehost.com/slices.xml
 + (id)createSliceRequest:(CTSlicehostSlice *)slice {
-    CTSlicehostSliceRequest *request = [CTSlicehostSliceRequest sliceRequestWithMethod:@"POST" path:@"slices.xml"];
+    CTSlicehostRequest *request = [CTSlicehostSliceRequest sliceRequestWithMethod:@"POST" path:@"slices.xml"];
 	NSData* data = [[slice toXML] dataUsingEncoding:NSASCIIStringEncoding];
 	[request setPostBody:[NSMutableData dataWithData:data]];
+    [request addRequestHeader:@"Content-Type" value:@"application/xml"];
     return request;
 }
 
 #pragma mark -
 #pragma mark PUT https://apikey@api.slicehost.com/slices/xxxx.xml rename
 + (id)renameSliceRequest:(NSUInteger)sliceId name:(NSString *)name {
-	return nil;
+    CTSlicehostSliceRequest *request = [CTSlicehostSliceRequest sliceRequestWithMethod:@"PUT" path:[NSString stringWithFormat:@"slices/%i.xml", sliceId]];
+    NSString *xml = [NSString stringWithFormat:@"<slice><id>%i</id><name>%@</name>", sliceId, name];
+	NSData* data = [xml dataUsingEncoding:NSASCIIStringEncoding];
+	[request setPostBody:[NSMutableData dataWithData:data]];
+    return request;
 }
 
 #pragma mark -

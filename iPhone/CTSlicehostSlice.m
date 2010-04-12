@@ -20,14 +20,7 @@
 }
 
 - (NSString *)toXML {
-	NSString *addr = @"";
-	
-	for (int i = 0; i < [addresses count]; i++) {
-		NSString *address = [addresses objectAtIndex:i];
-		addr = [addr stringByAppendingString:[NSString stringWithFormat:@"<address>%@</address>", address]];
-	}
-	
-	return [NSString stringWithFormat:@"<slice><name>%@</name><image-id type=\"integer\">%i</image-id><addresses type=\"array\">%@</addresses><progress type=\"integer\">%i</progress><id type=\"integer\">%i</id><bw-out type=\"float\">%f</bw-out><bw-in type=\"float\">%f</bw-in><flavor-id type=\"integer\">%i</flavor-id><status>%@</status></slice>", self.name, self.imageId, addr, progress, sliceId, bandwidthOut, bandwidthIn, flavorId, status];
+	return [NSString stringWithFormat:@"<slice><name>%@</name><image-id type=\"integer\">%i</image-id><flavor-id type=\"integer\">%i</flavor-id></slice>", self.name, self.imageId, flavorId];
 }
 
 - (void)dealloc {
