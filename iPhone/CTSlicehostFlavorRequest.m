@@ -28,7 +28,7 @@
 
 // GET https://apikey@api.slicehost.com/flavors.xml
 + (id)listRequest {
-    return nil;
+    return [CTSlicehostFlavorRequest flavorRequestWithMethod:@"GET" path:@"flavors.xml"];
 }
 
 - (NSArray *)flavors {
@@ -37,7 +37,7 @@
 
 // GET https://apikey@api.slicehost.com/flavors/xxxx.xml
 + (id)getFlavorRequest:(NSUInteger)flavorId {
-    return nil;
+    return [CTSlicehostFlavorRequest flavorRequestWithMethod:@"GET" path:[NSString stringWithFormat:@"flavors/%i.xml", flavorId]];
 }
 
 - (CTSlicehostFlavor *)flavor {

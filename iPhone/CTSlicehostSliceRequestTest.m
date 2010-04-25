@@ -13,8 +13,10 @@
 
 // Set these values to real values.  Your API key is available at manage.slicehost.com
 // For the existing slice ID, choose a slice you don't abusing :)
-#define kAPIKey @"YOUR-API-KEY"
-#define kExistingSliceId 12345
+//#define kAPIKey @"YOUR-API-KEY"
+//#define kExistingSliceId 12345
+#define kAPIKey @"c16b8796ca6c6714bbe7e8e482366bec0d29c51bfba176053249be10d7f99e8a"
+#define kExistingSliceId 175183
 
 static NSUInteger newSliceId = 0;
 

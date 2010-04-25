@@ -75,6 +75,10 @@
 		27089E42114AF47F00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */; };
 		2768C1A41149BFF300758718 /* libGHUnitIPhone3_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2768C1A31149BFF300758718 /* libGHUnitIPhone3_0.a */; };
 		2768C1BB1149C03600758718 /* GHUnitIPhoneTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768C1B61149C03600758718 /* GHUnitIPhoneTestMain.m */; };
+		2785B5AB1184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785B5AA1184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.m */; };
+		2785B5AE1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785B5AD1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.m */; };
+		2785B5B11184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785B5B01184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.m */; };
+		2785B5B41184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2785B5B31184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.m */; };
 		27FC98441172AC0D00250D42 /* CTSlicehostFlavorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC98431172AC0D00250D42 /* CTSlicehostFlavorRequest.m */; };
 		27FC98471172AC1600250D42 /* CTSlicehostImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC98461172AC1600250D42 /* CTSlicehostImageRequest.m */; };
 		27FC984A1172AC2100250D42 /* CTSlicehostBackupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC98491172AC2100250D42 /* CTSlicehostBackupRequest.m */; };
@@ -148,6 +152,14 @@
 		2768C1B71149C03600758718 /* GHUNSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHUNSObject+Swizzle.h"; sourceTree = "<group>"; };
 		2768C1B91149C03600758718 /* NSException+GHTestFailureExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+GHTestFailureExceptions.h"; sourceTree = "<group>"; };
 		2768C1BA1149C03600758718 /* NSValue+GHValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+GHValueFormatter.h"; sourceTree = "<group>"; };
+		2785B5A91184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostFlavorXMLParserDelegate.h; sourceTree = "<group>"; };
+		2785B5AA1184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostFlavorXMLParserDelegate.m; sourceTree = "<group>"; };
+		2785B5AC1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostImageXMLParserDelegate.h; sourceTree = "<group>"; };
+		2785B5AD1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostImageXMLParserDelegate.m; sourceTree = "<group>"; };
+		2785B5AF1184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostZoneXMLParserDelegate.h; sourceTree = "<group>"; };
+		2785B5B01184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostZoneXMLParserDelegate.m; sourceTree = "<group>"; };
+		2785B5B21184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostRecordXMLParserDelegate.h; sourceTree = "<group>"; };
+		2785B5B31184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostRecordXMLParserDelegate.m; sourceTree = "<group>"; };
 		27FC98421172AC0D00250D42 /* CTSlicehostFlavorRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostFlavorRequest.h; sourceTree = "<group>"; };
 		27FC98431172AC0D00250D42 /* CTSlicehostFlavorRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSlicehostFlavorRequest.m; sourceTree = "<group>"; };
 		27FC98451172AC1600250D42 /* CTSlicehostImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSlicehostImageRequest.h; sourceTree = "<group>"; };
@@ -311,6 +323,14 @@
 			children = (
 				27089E37114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.h */,
 				27089E38114AF2CA00A1BFE8 /* CTSlicehostSliceXMLParserDelegate.m */,
+				2785B5A91184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.h */,
+				2785B5AA1184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.m */,
+				2785B5AC1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.h */,
+				2785B5AD1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.m */,
+				2785B5AF1184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.h */,
+				2785B5B01184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.m */,
+				2785B5B21184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.h */,
+				2785B5B31184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.m */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -542,6 +562,10 @@
 				27FC98441172AC0D00250D42 /* CTSlicehostFlavorRequest.m in Sources */,
 				27FC98471172AC1600250D42 /* CTSlicehostImageRequest.m in Sources */,
 				27FC984A1172AC2100250D42 /* CTSlicehostBackupRequest.m in Sources */,
+				2785B5AB1184D79F00592C00 /* CTSlicehostFlavorXMLParserDelegate.m in Sources */,
+				2785B5AE1184D7AB00592C00 /* CTSlicehostImageXMLParserDelegate.m in Sources */,
+				2785B5B11184D7BA00592C00 /* CTSlicehostZoneXMLParserDelegate.m in Sources */,
+				2785B5B41184D7C400592C00 /* CTSlicehostRecordXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
